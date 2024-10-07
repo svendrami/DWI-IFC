@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 30-09</title>
+    <link rel="icon" href="favicon/favicon.ico" />
+    <!-- <style>
+      #lista-centro {
+        display: flex;
+        /*text-align: center;*/
+        justify-content: center;
+      }
+    </style> -->
+    <script>
+      function calcular() {
+        var num1 = Number(document.getElementById('num1').value)
+        var num2 = Number(document.getElementById('num2').value)
+        var elemResult = document.getElementById('resultado')
+
+        if (elemResult.textContent === undefined) {
+          elemResult.textContent = 'O resultado é ' + String(num1 + num2) + '.'
+        } else {
+          // IE
+          elemResult.innerText = 'O resultado é ' + String(num1 + num2) + '.'
+        }
+      }
+      function somar() {
+        var num1 = Number(document.getElementById('n1').value)
+        var num2 = Number(document.getElementById('n2').value)
+        var result = num1 + num2
+        alert('O resultado é: ' + result)
+      }
+    </script>
+  </head>
+  <body
+    style="
+      color: aliceblue;
+      background-image: url(imagens/imagem1.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    "
+  >
+    <hr />
+    <h1 style="text-align: center">Boa tarde</h1>
+    <h2>Hoje é segunda-feira</h2>
+    <h3>Olá</h3>
+    <h4>Boa tarde</h4>
+    <h5>IFC Blumenau</h5>
+    <h6>Santa Catarina</h6>
+
+    <a href="contato.html" target="_blank"
+      >Clique aqui e vá para a página de contato</a
+    >
+    <a href="mailto:teste@teste.com">Clique para contato</a>
+    <a href="/contato.html"></a>
+    <br /><br /><br /><br />
+
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing br*4elit. Tenetur,
+      eveniet earum! Est eaque maiores atque qui facilis commodi esse nobis
+      repudiandae iure delectus excepturi ratione aliquid, neque nulla dolores
+      expedita.
+    </p>
+    <p>
+      <strong>Lorem ipsum</strong>, dolor sit <b>amet</b> consectetur
+      adipisicing elit. Officiis illum voluptatem vel quidem dolorum dolor,
+      eligendi ea, sit, sunt explicabo distinctio ex possimus eaque. Voluptates
+      atque voluptatem iusto dolore odio.
+    </p>
+    <p style="text-align: justify">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+      assumenda exercitationem dolorem impedit repellat ullam ducimus. Nam,
+      quidem, deleniti fuga quia sit voluptatibus quaerat repudiandae quam
+      perspiciatis, magni cupiditate hic. Ad, est aut! Itaque sit quo vero
+      quaerat non assumenda temporibus dolores nobis eum soluta magnam
+      reiciendis vitae nesciunt, placeat blanditiis ex sapiente expedita
+      mollitia exercitationem? In pariatur molestiae magnam. Quae, commodi
+      accusantium temporibus optio suscipit ab omnis, iste at magni, soluta
+      repudiandae ipsum beatae. Alias porro ipsa ab ullam odit quisquam placeat,
+      exercitationem sequi maxime tempore in nam officia. Nostrum provident
+      adipisci unde inventore qui hic assumenda, fuga repellat soluta deleniti.
+      Nesciunt ducimus quisquam consequuntur aut eos enim amet excepturi
+      pariatur vitae dolores? Tempore distinctio officia aliquam quia nostrum?
+      Nihil quo cupiditate excepturi at. Quis suscipit non reiciendis, repellat
+      veritatis minima perspiciatis earum natus cum similique aliquam ex
+      corporis, asperiores aspernatur eius recusandae autem accusamus obcaecati
+      ipsam! Perferendis, at. Odio vero unde corrupti commodi necessitatibus
+      voluptatum quisquam aliquam, molestiae deserunt qui quasi ipsa deleniti
+      minus in, debitis numquam assumenda ea. Similique facere repellendus
+      eligendi repellat magnam nostrum unde nesciunt. Similique sint facere,
+      eaque pariatur quia mollitia at quam porro cupiditate expedita, quas hic
+      nihil perspiciatis ea exercitationem reprehenderit architecto unde quidem
+      deserunt consequuntur, neque asperiores eum quos recusandae? Expedita. Est
+      nisi quas rerum dolores. Ab nulla culpa repellendus quisquam quia,
+      reiciendis tenetur? Mollitia distinctio eligendi dignissimos sapiente
+      sint, adipisci dicta laudantium. Voluptatem dolor aspernatur incidunt
+      similique non quod est. Quod ut aliquam placeat minus necessitatibus
+      veniam nam, debitis, quam, ab odit soluta molestias quisquam! Veritatis
+      harum aperiam fugiat pariatur quod voluptate animi hic, ab voluptatem
+      quasi, quaerat, laborum voluptates? Nihil, quibusdam eligendi. Perferendis
+      et explicabo ad vitae voluptas blanditiis laudantium, officiis, aspernatur
+      nostrum, nemo reiciendis praesentium exercitationem dolor ratione expedita
+      necessitatibus id? Reprehenderit, optio. Itaque fugit dolor odit adipisci.
+    </p>
+    <br /><br />
+    <h2 style="text-align: center">Praias de Santa Catarina</h2>
+    <!-- <div id="lista-centro"> -->
+    <br />
+    <ul style="list-style-type: square">
+      <li>Porto Belo</li>
+      <a href="https://www.mariscal.com.br"><li>Mariscal</li></a>
+
+      <li>Itapema</li>
+      <li>Baln Camboriu</li>
+    </ul>
+    <!-- </div> -->
+    <h2>Classificação nas Olimpíadas</h2>
+    <ol>
+      <li>Mariana</li>
+      <li>João</li>
+      <li>Vitor</li>
+      <li>Ana</li>
+      <li>Pedro</li>
+    </ol>
+    <br /><br />
+
+    <form>
+      <fieldset>
+        <legend>Informe os seus dados</legend>
+
+        <input
+          type="text"
+          name=""
+          id="nome"
+          maxlength="50"
+          placeholder="Digite o seu nome"
+        />
+        <label for="profissao">Profissão: </label>
+        <input type="text" name="" id="profissao" maxlength="70" autofocus />
+        <label for="nasc">Data de nascimento</label>
+        <input type="datetime-local" id="nasc" />
+        <label>Escolha um número</label>
+        <input type="number" min="1" max="10" maxlength="2" />
+        <label>Escolha uma cor</label>
+        <input type="color" /><br /><br /><br />
+        <label>Deixe um comentário</label>
+        <input type="range" id="a" name="a" value="50" />
+        <textarea name="message" rows="10" cols="30">
+        Deixe seu comentário aqui...
+        </textarea>
+
+        <input type="button" onclick="alert('dados enviados')" value="OK!" />
+        <br /><br />
+        <label>Informe um valor: </label
+        ><input type="text" id="num1" onblur="calcular();" />
+        <label>Informe outro valor: </label
+        ><input type="text" id="num2" onblur="calcular();" />
+
+        <span id="resultado"></span>
+      </fieldset>
+    </form>
+    <br /><br /><br />
+    <form>
+      <fieldset>
+        <legend>Teste de cálculo</legend>
+        <label>Escolha o número 1: </label>
+        <input type="number" id="n1" min="1" max="10" maxlength="4" />
+        <label>Escolha o número 2: </label>
+        <input type="number" id="n2" min="1" max="10" maxlength="4" />
+        <input type="button" value="Calcular" onclick="somar()" />
+      </fieldset>
+    </form>
+  </body>
+</html>
